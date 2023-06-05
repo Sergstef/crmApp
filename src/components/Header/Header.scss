@@ -1,0 +1,10 @@
+@import "../../styles/variables.scss";
+
+.crm_header {
+    height: 80px;
+    background-color: $purple-color;
+    color: $white-color;
+    display: flex;
+    justify-content: space-between;
+    font-weight: $bold-font;
+}
