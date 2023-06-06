@@ -1,5 +1,10 @@
 {
   "compilerOptions": {  
     "jsx": "react-jsx",
+    "sourceMap": true,
+    "paths": { 
+ 		    "@components/*": ["./src/components/*"],
+			  "@assets/*": ["./assets/*"],
+		}
   }
 }

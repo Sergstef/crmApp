@@ -7,4 +7,9 @@
     display: flex;
     justify-content: space-between;
     font-weight: $bold-font;
+
+    img {
+        height: 48px;
+        width: 48px;
+    }
 }

@@ -7,6 +7,7 @@ module.exports = {
     filename: "main.js",
     path: path.resolve(__dirname, "build"),
   },
+  devtool: 'inline-source-map',
   module: {
     rules: [
       {
@@ -38,6 +39,10 @@ module.exports = {
   },
   resolve: {
     extensions: ["*", ".js", ".jsx", ".ts", ".tsx"],
+    alias: {
+      "@assets": path.resolve(__dirname, 'assets'),
+      "@components": path.resolve(__dirname, "src/components"),
+    },
   },
   plugins: [
     new HtmlWebpackPlugin({

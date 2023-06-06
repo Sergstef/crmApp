@@ -1,5 +1,5 @@
-import logo from '../../../assets/logo.svg';
-import profile from '../../../assets/profile.svg';
+import logo from '@assets/logo.svg';
+import profile from '@assets/profile.svg';
 import './Header.scss';
 
 const Header = () => <header className="crm_header">
