@@ -1,0 +1,64 @@
+@import "../../styles/variables.scss";
+
+.crm_addresses {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .crm_addresses-title, .crm_addresses-items-title {
+        font-size: 26px;
+        line-height: 32px;
+        font-weight: $bold-font;
+    }
+
+    .crm_addresses-content {
+        display: flex;
+        flex-direction: column;
+        font-weight: $medium-font;
+
+        .crm_addresses-item-label {
+            margin-bottom: 24px;
+        }
+
+        .crm_addresses-item-form {
+            margin-bottom: 32px;
+            display: flex;
+            gap: 24px;
+
+            .crm_addresses-item-input {
+                width: 80%;
+                height: 70px;
+                border-radius: 10px;
+            }
+
+            input[type=text]:focus {
+                border: 3px solid $purple-color;
+            }
+
+            .crm_addresses-item-button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 16px;
+                width: 20%;
+                height: 70px;
+                background-color: $purple-color;
+                color: white;
+            }
+        }
+
+        .crm_addresses-items {
+            box-shadow: 0px 2px 8px rgba(2, 0, 97, 0.25);
+            border-radius: 10px;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+            .crm_addresses-item {
+                padding: 16px;
+                border-bottom: 1px solid #D7D7D7;
+            }
+        }
+    }
+}

@@ -72,4 +72,11 @@ select {
 body {
     font-size: $main-font-size;
     font-family: $main-font-family;
+    line-height: $default-line-height;
+    color: $text-color;
+    font-weight: $semiBold-font;
+
+    #root {
+      height: 100vh;
+    }
 }

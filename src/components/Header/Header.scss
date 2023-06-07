@@ -7,6 +7,20 @@
     display: flex;
     justify-content: space-between;
     font-weight: $bold-font;
+    padding: 0px $default-row-padding;
+
+    .crm_header-title, .crm_header-profile {
+        display: flex;
+        align-items: center;
+    }
+
+    .crm_header-title {
+        gap: 24px;
+    }
+
+    .crm_header-profile {
+        gap: 16px;
+    }
 
     img {
         height: 48px;

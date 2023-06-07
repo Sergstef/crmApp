@@ -1,0 +1,20 @@
+@import "../../styles/variables.scss";
+
+.crm_news {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .crm_news-title {
+        font-size: 26px;
+        line-height: 32px;
+        font-weight: $bold-font;
+    }
+
+    .crm_news-item {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        font-weight: $medium-font;
+    }
+}

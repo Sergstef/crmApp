@@ -1,0 +1,54 @@
+@import "../../styles/variables.scss";
+
+.crm_menu {
+    width: 300px;
+    color: #1C1C1E;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 24px 20px 24px 32px;
+    box-shadow: 0px 0px 5px rgba(2, 0, 96, 0.25);
+    overflow-y: auto;
+
+    .crm_menu-title {
+        font-weight: $bold-font;
+    }
+
+    .crm_menu-link-container {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .crm_menu-links {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        a:active, a:hover, a {
+            text-decoration: none;
+            color: $text-color;
+        }
+    }
+
+    .crm_menu-link {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        img {
+            width: 32px;
+            height: 32px;
+        }
+
+        .link_arrow {
+            width: 15px;
+            height: 15px;
+            margin-left: auto;
+        }
+    }
+
+    .crm_menu-extra-link {
+        margin-left: 42px;
+    }
+}
