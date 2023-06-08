@@ -52,3 +52,13 @@
         margin-left: 42px;
     }
 }
+
+@media (max-width: 768px) {
+    .crm_menu {
+        width: 150px;
+    }
+
+    .crm_menu-extra-link {
+        margin-left: 0;
+    }
+}

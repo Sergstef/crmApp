@@ -1,7 +1,7 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import './Addresses.scss';
 import { getAddresses } from '../../services/addressesService';
-import white_search from '@assets/white_search.svg'
+import white_search from '@assets/white_search.svg';
 
 const Addresses = () => {
     const [addresses, setAddresses] = useState([]);
