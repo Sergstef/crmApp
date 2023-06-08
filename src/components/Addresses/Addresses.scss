@@ -44,6 +44,7 @@
                 height: 70px;
                 background-color: $purple-color;
                 color: white;
+                border-radius: 10px;
             }
         }
 
@@ -58,6 +59,37 @@
             .crm_addresses-item {
                 padding: 16px;
                 border-bottom: 1px solid #D7D7D7;
+            }
+        }
+    }
+}
+
+@media (max-width: 430px) {
+    .crm_addresses {
+        .crm_addresses-content {
+            .crm_addresses-items {
+                .crm_addresses-item {
+                    word-break: break-word;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .crm_addresses {
+        .crm_addresses-content {
+            .crm_addresses-item-form {
+                flex-direction: column;
+
+                .crm_addresses-item-input {
+                    width: 100%;
+                }
+
+                .crm_addresses-item-button {
+                    width: 100%;
+                }
             }
         }
     }

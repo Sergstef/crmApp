@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './Addresses.scss';
 import { getAddresses } from '../../services/addressesService';
-import white_search from '@assets/white_search.svg';
+const white_search = require("@assets/white_search.svg") as string;
 
 const Addresses = () => {
     const [addresses, setAddresses] = useState([]);
@@ -18,7 +18,7 @@ const Addresses = () => {
             <div className="crm_addresses-item-form">
                 <input className="crm_addresses-item-input" value={address} onChange={e => setAddress(e.target.value)}
                     type="text" placeholder='Введите интересующий вас адрес' />
-                <button className="crm_addresses-item-button" onClick={search}>
+                <button disabled={address.length <= 3} className="crm_addresses-item-button" onClick={search}>
                     <img src={white_search} alt="" />
                     <span>Поиск</span>
                 </button>

@@ -1,5 +1,5 @@
-import logo from '@assets/logo.svg';
-import profile from '@assets/profile.svg';
+const logo = require("@assets/logo.svg") as string;
+const profile = require("@assets/profile.svg") as string;
 import './Header.scss';
 
 const Header = () => <header className="crm_header">

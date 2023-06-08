@@ -6,10 +6,12 @@
     color: $white-color;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     font-weight: $bold-font;
-    padding: 0px $default-row-padding;
+    padding: 16px $default-row-padding;
 
     .crm_header-title, .crm_header-profile {
+        height: fit-content;
         display: flex;
         align-items: center;
     }
@@ -25,5 +27,27 @@
     img {
         height: 48px;
         width: 48px;
+    }
+}
+
+@media (max-width: 500px) {
+    .crm_header {
+        .crm_header-title, .crm_header-profile {
+            flex-direction: column;
+            font-size: 13px;
+        }
+
+        .crm_header-title {
+            gap: 10px;
+        }
+    
+        .crm_header-profile {
+            gap: 10px;
+        }
+
+        img {
+            height: 30px;
+            width: 30px;
+        }
     }
 }

@@ -16,5 +16,9 @@
         flex-direction: column;
         gap: 24px;
         font-weight: $medium-font;
+
+        .crm_news-item-text {
+            word-break: break-all;
+        }
     }
 }

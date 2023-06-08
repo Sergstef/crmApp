@@ -1,4 +1,4 @@
-import arrow_up from '@assets/arrow_up.svg';
+const arrow_up = require("@assets/arrow_up.svg") as string;
 import { menuElements } from '../../constants/menuElements'
 import { Link } from 'react-router-dom';
 import './Menu.scss';
@@ -32,11 +32,13 @@ const Menu = () => {
             <ul className='crm_menu-links'>
                 {menuElements.map((el, i) => <div key={i} className='crm_menu-link-container'>
                     <div className='crm_menu-link' onClick={() => toggleExtra(el.name)}>
-                        <img src={el.picture} alt="" />
-                        {isMenuVisible && <Link to={el.src}>{el.name}</Link>}
+                        <Link className='crm_menu-link-text' to={el.src}>
+                            <img src={el.picture} alt="" />
+                            {isMenuVisible && <span>{el.name}</span>}
+                        </Link>
                         {isExtraConfigOpened && el.name === 'Настройки' && <img className='link_arrow' src={arrow_up} alt="" />}
                     </div>
-                    {isExtraConfigOpened && el.name === 'Настройки' && <ExtraConfig />}
+                    {isExtraConfigOpened && el.name === 'Настройки' && <ExtraConfig isMenuVisible={isMenuVisible} />}
                 </div>)}
             </ul>
         </nav>
